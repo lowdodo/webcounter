@@ -21,3 +21,9 @@ When counter has a nonzero value and it is reset the value becomes zero
     Page Should Contain  nappia painettu 3 kertaa
     Click Button  Nollaa
     Page Should Contain  nappia painettu 0 kertaa
+
+When value is set
+    Go To  ${HOME_URL}
+    Input Text  Arvo  10
+    Click Button  Aseta
+    Page Should Contain  nappia painettu 10 kertaa
